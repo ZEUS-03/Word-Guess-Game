@@ -48,7 +48,7 @@ async function init() {
     setLoading(false);
     isLoading = false;
 
-    console.log(word);
+    // console.log(word);
 
     // to enter letters inside the boxes 
     function enterInput( keyPressed ) { 
@@ -91,7 +91,7 @@ async function init() {
 
         const currentWordSplit = currentWord.split("");
         const map = makeMap(wordSplit);
-        console.log(validWord);
+        // console.log(validWord);
 
 
         for ( i=0; i<ANSWER_LENGTH; i++ ) {

@@ -1,6 +1,8 @@
 # Word-Guess-Game
 A Word Guessing game made with HTML, CSS and JavaScript which uses API to get the word and the user input word to validate the word.
 
+Link to the game is: https://guessthedamnword.netlify.app
+
 ## Functionality:
 
 - In this game the player has to guess a random 5 letter word(valid word) and he/she has 6 chances to guess the word.
@@ -19,4 +21,4 @@ A Word Guessing game made with HTML, CSS and JavaScript which uses API to get th
 
 - To validate our word API used is: https://words.dev-apis.com/validate-word
 
-- Any Questions? Ask them away!!
+### Any Questions? Ask them away!!

@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  margin: 0;
+  padding: 0;
+  font-family: Noto Sans;
+}
+
+.header {
+  text-align: center;
+  border-bottom: 2px solid #000;
+  margin-bottom: 0;
+  padding: 15px;
+}
+
+.brand {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.info-bar {
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  font-size: 30px;
+  display: flex;
+}
+
+.input-containers {
+  max-width: 290px;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px 5px;
+  margin: 10px auto;
+  display: grid;
+}
+
+.character {
+  height: 45px;
+  width: 45px;
+  text-transform: uppercase;
+  border: 3px solid #ccc;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes flash {
+  5% {
+    border-color: red;
+  }
+
+  100% {
+    border-color: #ccc;
+  }
+}
+
+@keyframes rainbow {
+  100%, 0% {
+    color: red;
+  }
+
+  8% {
+    color: #ff7f00;
+  }
+
+  16% {
+    color: #ff0;
+  }
+
+  25% {
+    color: #7fff00;
+  }
+
+  33% {
+    color: #0f0;
+  }
+
+  41% {
+    color: #00ff7f;
+  }
+
+  50% {
+    color: #0ff;
+  }
+
+  58% {
+    color: #007fff;
+  }
+
+  66% {
+    color: #00f;
+  }
+
+  75% {
+    color: #7f00ff;
+  }
+
+  83% {
+    color: #f0f;
+  }
+
+  91% {
+    color: #ff007f;
+  }
+}
+
+.winner {
+  animation: 4s linear infinite rainbow;
+}
+
+.spiral {
+  animation: .8s linear infinite spin;
+  display: inline-block;
+}
+
+.correct {
+  background-color: green;
+}
+
+.close {
+  background-color: #e0a745;
+}
+
+.wrong {
+  background-color: #9a9292;
+}
+
+.invalid {
+  animation: 1s flash;
+}
+
+.popup, .popup-loss {
+  width: 450px;
+  height: 300px;
+  visibility: hidden;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 25px 50px #0000001a, 0 0 0 1000px #fffffff2;
+}
+
+.close-popup, .close-popup-loss {
+  color: #fff;
+  cursor: pointer;
+  background-color: red;
+  padding: 10px 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.show {
+  visibility: visible;
+}
+
+/*# sourceMappingURL=index.3a01df49.css.map */
